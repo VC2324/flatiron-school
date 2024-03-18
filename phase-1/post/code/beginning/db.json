@@ -1,0 +1,80 @@
+{
+  "pokemon": [
+    {
+      "id": "1",
+      "name": "Ditto",
+      "type": [
+        "normal"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Charizard",
+      "type": [
+        "Fire",
+        "Flying"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Gengar",
+      "type": [
+        "Ghost"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Pikachu",
+      "type": [
+        "Thunder"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Sandslash",
+      "type": [
+        "Ground"
+      ]
+    },
+    {
+      "id": "a74c",
+      "name": "",
+      "type": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "29f9",
+      "name": "squirter",
+      "type": [
+        "water",
+        ""
+      ]
+    },
+    {
+      "id": "3c8f",
+      "name": "Blastoise",
+      "type": [
+        "water",
+        ""
+      ]
+    }
+  ],
+  "DOG": [
+    {
+      "id": "1",
+      "name": "Toby",
+      "type": [
+        "Labrador"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Frank",
+      "type": [
+        "Dachshund"
+      ]
+    }
+  ]
+}
