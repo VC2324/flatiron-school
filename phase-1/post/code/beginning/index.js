@@ -19,10 +19,10 @@ function myfetch(url, requestOptions, afterJson) {
     return fetch(url, requestOptions).then((response) => response.json()).then(afterJson)
 }
 
-// fetch("http://localhost:3000/pokemon")
+fetch("http://localhost:3000/pokemon")
 // //convert the resulting JSON into some 35 value
-// .then(response => response.json())
-myfetch("http://localhost:3000/pokemon", undefined,)
+.then(response => response.json())
+// myfetch("http://localhost:3000/pokemon", undefined,)
 .then(pokemon =>{
     pokemon.forEach(pokemon => {
         const li = document.createElement("li");
@@ -46,18 +46,20 @@ document.querySelector("form").addEventListener("submit", event =>{
 
 
 
+
+
 myfetch("http://localhost:3000/pokemon", {
     method: "POST",
     headers: {
-        "Content-Type" : "application.json",//the type od content were POSTing
-        "Accept" : "application.json" //The type of content we hope to recieve
+        "Content-Type" : "application/json",//the type od content were POSTing
+        "Accept" : "application/json" //The type of content we hope to recieve
     },
     /// ...  and this body
     body: JSON.stringify({
         name: document.querySelector("form").name.value,
-        type: [
-            document.querySelector("form").name1.value,
-            document.querySelector("form").name2.value,
+        types: [
+            document.querySelector("form").forms.value,
+            document.querySelector("form").forms.value,
             
         ]      
     })

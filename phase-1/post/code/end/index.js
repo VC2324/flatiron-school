@@ -45,8 +45,7 @@ fetch("http://localhost:3000/colors")
         // 3. Append the <li> as a child to some existing element in the DOM
         //    i.e., `[parent].append([child])`.
         colorList.append(colorLi);
-    });
-})
+ });})
 .catch(error => console.log(error));
 
 // Now, let's trigger a POST request when the user submits the form,
