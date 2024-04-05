@@ -1,12 +1,29 @@
+import { useState } from "react"
+
 export default function Form() {
+
+    const [userInput, setUserInput]= useState ({
+        name: " ", 
+        movie: " "
+    })
+    // const [name, setName] = useState("");
+    // const [movie, setMovie] = useState("");
+    function changeInput (event) { 
+        
+    setUserInput ({
+        ...userInput, [event.target.name] :  event.target.value
+
+    })
+    }
+
     return (
         <form>
             <label><strong>Name </strong>
-                <input />
+                <input name="name" value ={userInput.name}onChange={changeInput}/>
             </label>
             <br/><br/>
             <label><strong>Movie </strong>
-                <input />
+                <input name ="movie" value ={userInput.movie}onChange={changeInput}/>
             </label>
             <br/><br/>
             <em>Your lucky number is</em> <strong>2</strong>!
